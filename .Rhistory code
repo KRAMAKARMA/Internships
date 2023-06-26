@@ -1,0 +1,75 @@
+setwd(C:/Users/Rama/Downloads")
+setwd("C:/Users/Rama/Downloads")
+insur= read.csv("insurance.csv")
+head(insurance)(modified)
+class(insur$labels)
+insur$labels = as.factor(insur$labels)
+library(tree)
+i.tree <- tree(labels~.,data = insur)
+nrow(insur)
+n=nrow(insur)
+n
+n1=floor(n*(0.7))
+n1=floor(n*(0.7))
+n1
+n2=n-n1
+n2
+train=sample Range(1:n,n1)
+train
+in.tree <- tree(labels~.,data=insur,subset=train) 
+insur.pred_test = predict(i.tree, insur[-train,], type="class")
+insur.pred_test = predict(i.tree, insur[-train,], type="class")
+insur.pred_test
+n2
+table(insur.pred_test, insur$labels[-train])
+(8481+524)/n2
+insur.pred_train = predict(i.tree, insur[train,], type="class")
+table(insur.pred_train, insur$labels[train])
+(19733+1266)/n1
+save.image("C:\\Users\\Rama\\Desktop\\ASCI\\Notes\\R notes")
+q()
+q()
+setwd("C:\Users\Rama\Desktop\ASCI\Notes\Data Science")
+setwd("C:/Users/Rama/Desktop/ASCI/Notes/Data Science")
+isur= read.csv("insurance.csv")
+isur= read.csv("insurance.csv")
+list()
+getwd()
+isur= read.csv("insurance.csv")
+head (insur)
+insur$labels = as.factor(insur$labels)
+library(randomForest)
+utils:::menuInstallPkgs()
+insur$labels = as.factor(insur$labels)
+ibrary(randomForest)
+insur$labels = as.factor(insur$labels)
+library(randomForest)
+output.forest <- randomForest(labels~., ntree=50,mtry=2,data = insur)
+output.forest <- randomForest(labels ~ . , ntree=50, mtry=2, data = insur)
+n=nrow(insur)
+n
+n1=floor(n*(0.7))
+n1
+n2=n-n1
+n2
+a=(2,4,2,6)
+a=c(2,4,2,6)
+a
+sample(a,2)
+sample(a,2)
+sample(a,3)
+train = sample(1:n,n1)
+train
+in.tree <- randomForest(labels~.,ntree=50,mtry=2,data=insur,subset=train) 
+insur.pred_test = predict(i.tree, insur[-train,], type="class")
+insur.pred_test = predict(in.tree, insur[-train,], type="class")
+table(insur.pred_test, insur$labels[-train])
+library(randomForest)
+in.tree <- randomForest(labels~.,ntree=50,mtry=2,data=insur,subset=train)
+insur.pred_test = predict(i.tree, insur[-train,], type="class")
+library(randomForest)
+in.tree <- randomForest(labels~.,ntree=50,mtry=2,data=insur,subset=train)
+insur.pred_test = predict(in.tree, insur[-train,], type="class")
+insur.pred_test = predict(in.tree, insur[-train,], type="class")
+table(insur.pred_test, insur$labels[-train])
+q()
