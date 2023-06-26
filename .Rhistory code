@@ -1,7 +1,7 @@
 setwd(C:/Users/Rama/Downloads")
 setwd("C:/Users/Rama/Downloads")
 insur= read.csv("insurance.csv")
-head(insurance)(modified)
+head(insur)
 class(insur$labels)
 insur$labels = as.factor(insur$labels)
 library(tree)
